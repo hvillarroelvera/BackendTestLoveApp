@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+org.jboss.tools.openshift.ApplicationId=553c1e8bfcf933c430000157
+org.jboss.tools.openshift.ApplicationName=testlovebackend
+org.jboss.tools.openshift.Connection=https\://hf.itachi.vv%40gmail.com@
+org.jboss.tools.openshift.DeployFolder=deployments
+org.jboss.tools.openshift.Domain=hvillarroel
+org.jboss.tools.openshift.RemoteName=origin
