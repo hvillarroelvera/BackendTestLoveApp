@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="MySqlDS" transaction-type="JTA">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+   <!-- SOLO DESARROLLO --> <jta-data-source>java:/MySqlDS</jta-data-source>
+    <!--<jta-data-source>java:jboss/datasources/MySQLDS</jta-data-source>>-->
+	<class>com.hector.apptestlove.model.entity.Contacto</class>
+	<class>com.hector.apptestlove.model.entity.EstadoSession</class>
+	<class>com.hector.apptestlove.model.entity.Estadosolicitud</class>
+	<class>com.hector.apptestlove.model.entity.Gcm</class>
+	<class>com.hector.apptestlove.model.entity.Pregunta</class>
+	<class>com.hector.apptestlove.model.entity.Preguntapendiente</class>
+	<class>com.hector.apptestlove.model.entity.Puntuacion</class>
+	<class>com.hector.apptestlove.model.entity.Solicitud</class>
+	<class>com.hector.apptestlove.model.entity.SolicitudPK</class>
+	<!-- <class>com.hector.apptestlove.model.entity.Tiposolicitud</class>-->
+	<class>com.hector.apptestlove.model.entity.Usuario</class>
+	<class>com.hector.apptestlove.model.entity.Session</class>
+		<class>com.hector.apptestlove.model.entity.Respuestapendiente</class>
+		<class>com.hector.apptestlove.model.entity.Puntuacionpendiente</class>
+	
+     <properties>
+      <property name="showSql" value="true"/>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+      <!--  <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/testlovebackend" />
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.password" value="hfvvhfvv31"/>-->
+    </properties>
+	</persistence-unit>
+</persistence>
